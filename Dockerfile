@@ -41,6 +41,8 @@ RUN cd ~/esp32 && \
 # Build Folder
 RUN mkdir /source && mkdir /artifacts && cd /source
 
+VOLUME ["/artifacts"]
+
 ADD build.sh /source
 
 CMD ['build.sh']
