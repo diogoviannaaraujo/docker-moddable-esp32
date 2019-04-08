@@ -14,7 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 # Moddable clone and build
 ENV MODDABLE /moddable
 
-COPY make.esp32.mk /moddable/tools/mcconfig/
+# COPY make.esp32.mk /moddable/tools/mcconfig/
 
 RUN git clone https://github.com/Moddable-OpenSource/moddable.git && \
   cd moddable/build/makefiles/lin && \
