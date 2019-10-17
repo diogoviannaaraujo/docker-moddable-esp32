@@ -1,5 +1,5 @@
-git clone $SOURCE_REPO
-
+cd /source
 mcconfig -d -m -p esp32
 
-cp /moddable/build/tmp/esp32/debug/idf/xs_esp32.bin /artifacts/firmware.bin
+mkdir /source/build
+cp /root/moddable/build/tmp/esp32/debug/idf/* /source/build/
